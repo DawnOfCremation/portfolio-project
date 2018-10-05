@@ -131,7 +131,7 @@ USE_TZ = True
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'portfolio/static/')
 ]
-STATICFILES_DIRS = 'pstatic'
+
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
