@@ -50,6 +50,8 @@
               <br />
               {% if blog.image %}
                 <img class="img-fluid" src="{{ blog.image.url }}">
+              {% else %}
+                <p> </p>
               {% endif %}
               <br />
               <p> {{ blog.summary }}</p>
