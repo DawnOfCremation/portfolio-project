@@ -5,7 +5,7 @@ class Blog(models.Model):
     title = models.CharField(max_length=200)
     pub_date = models.DateTimeField()
     body = models.TextField()
-    image = models.ImageField(upload_to='images/', blank=True)
+    image = models.ImageField(upload_to='images/', null=True, blank=True)
 
     def __str__(self):
         #changes the blog title in the admin area from being called blog 1 and blog 1 to the actual blog title
